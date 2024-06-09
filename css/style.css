@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*google font Roboto, es recomdable dar estilos en el css, no el html*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ***************header**************** */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c71f186;
+    padding: 15px;
+}
+header .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.logo img:hover{
+    transform: scale(1.5);
+}
+.logo a{
+    text-decoration: none; /*quito el subrayado del link*/
+    font-size: 30px;
+    font-weight: 900; /*texto en negrita*/
+}
+.logo p{
+    margin: 20px; /*separa el logo de la imagen*/
+}
+.menu{ /*copio las mismas propiedades de flex,row,justify y align que en header logo*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /*saco las viñetas*/    
+}
+.menu li{
+    margin: 10px; /*separa a los links entre si*/  
+    font-size: 20px;
+      
+} 
+.menu a{
+    text-decoration: none; /*quito el subrayado del link*/
+    color: black;
+    font-size: 20px;
+    border: solid 1px #070b1386;
+    border-radius: 20px;
+    padding: 10px;
+}
+/* ****************main****************** */
+main{
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; /*para seprarlo de arriba,abajo y costados*/
+}
+.card{
+    width: 350px;
+    height: 400px;
+    border: solid 1px #02063d;
+    border-radius: 10px; /*se redondean las puntas del borde*/
+    margin: 20px; /*para seprarlos entre ellos*/
+}
+.bateria{
+    background-image: url(../img/bateriagrande.jpg);
+    background-size: cover; /*cover agranda la imagen para que no se vuelva a repetir, ver otra propiedad
+    que se llama object-fit que tiene propiedades para las imagenes*/
+    
+}
+.bateria p{
+    padding: 25px 30px;
+}
+.parrafo{  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1c71f146;
+    position: relative; /*el contenedor tiene relative, le doy esta posicion para poder modificar el boton
+    estoy eligiendo el contenedor al que se van a ajustar los elementos que tengan absolute*/
+}
+.parrafo p{
+    padding: 25px 30px; 
+} 
+.parrafo button{
+    position: absolute; /*puedo poner absolute cuando tengo un relative, y es absolut xk es relativo a su
+    contenedor, si no hubiera puesto relative arriba no podria ubicar el boton donde quiero*/
+    bottom: 20px;
+    left: 15px;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 0 black; /*para hacer una sombra al boton*/
+    /*el ultimo 0 antes de black, es para la difuminacion, si quiero mas le pongo mas valor ej:10px
+    el 0 es color solido*/
+    background-color: grey;
+    color: white;
+    transition: all 0.3s;
+}
+button:hover{
+    transform: translateY(2px); /*da la sensacion de que se mueve el boton*/
+    box-shadow: 0 2px 0 black; /*le puso menos valor (2) p/q de sensacion de que apreta un boton*/
+}
+/* nosotros --- form---******** */
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: flex-start;
+    background-color: white;    
+    padding: 20px;   
+}
+
+/*Preguntas **************************/
+h2{
+    color: blue;
+}
+
+/* **************** footer************** */
+
+footer{
+    background-color: #1c71f186; 
+    text-align: right;
+    padding: 20px;  
+    height: 150px; 
+}
+footer ul{
+    display: flex;
+    list-style: none; /*saque las viñetas a los links*/
+    justify-content: flex-end;    
+}
+footer i{
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+    border: solid 1px #070b1386;
+    border-radius: 50%;
+    
+}
+footer a{
+    text-decoration: none; /*saque la linea a los links*/
+}
