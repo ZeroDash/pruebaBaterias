@@ -64,7 +64,8 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 30px; /*para seprarlo de arriba,abajo y costados*/
+    padding: 50px; /*para seprarlo de arriba,abajo y costados*/
+    
 }
 .card{
     width: 350px;
@@ -124,10 +125,23 @@ button:hover{
     background-color: white;    
     padding: 20px;   
 }
+/* Ventas - Productos, caja seleccion ***************************/
+
+.seleccion{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    background-color: white;    
+    padding: 20px;       
+}
+.producto{
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.651);
+}
 
 /*Preguntas **************************/
 h2{
-    color: blue;
+    color: black;
 }
 
 /* **************** footer************** */
