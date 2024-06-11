@@ -51,6 +51,7 @@ header .logo{
     font-size: 20px;
       
 } 
+
 .menu a{
     text-decoration: none; /*quito el subrayado del link*/
     color: black;
@@ -59,6 +60,10 @@ header .logo{
     border: solid 1px #070b1386;
     border-radius: 20px;
     padding: 10px;
+}
+.menu a:hover{
+    background-color: #808080b6;
+    box-shadow: 0 4px 0 black; /*le puso menos valor (2) p/q de sensacion de que apreta un boton*/
 }
 /* *******************portada **************/
 .portada{
@@ -162,7 +167,8 @@ h2{
     color: black;
     animation-name: cambioColor; /*para que cambie de color el fondo del titulo con keyframe*/
     animation-duration: 5s;
-    animation-iteration-count: infinite; /*para que se repita infinitas veces y no solo cuando cargo la pag*/
+    animation-iteration-count: infinite; /*para que se repita infinitas veces y no solo cuando cargo la pag
+    si no quiero que sea infinitas veces, puedo poner una cantidad de veces, ejemplo:3 */
     padding: 15px;
     
 }
