@@ -145,7 +145,24 @@ button:hover{
     margin: 20px;
     align-items: flex-start;
     background-color: white;    
-    padding: 20px;   
+    padding: 20px; 
+    
+}
+.form input{
+    height: 2.5rem; /*agrando las casillas del form*/
+    width: 350px; /*agrando las casillas del form*/
+    border-radius: 15px;
+    background-color: #c6c6c6;
+    border-width: 0px; /*les saca el borde a las cajitas*/
+}
+textarea{
+    width: 451px;
+    height: 210px;
+}
+.form input:focus{ /*focus es como un hover pero clickeando*/
+   transform: scale(1.05); 
+   transition: .8s;
+   outline: none;/*le saca el bordecito a la casilla del form*/
 }
 /* Ventas - Productos, caja seleccion ***************************/
 
@@ -165,7 +182,7 @@ button:hover{
 /**************** Inicio y Preguntas --- h2 ------ *********/
 h2{
     color: black;
-    animation-name: cambioColor; /*para que cambie de color el fondo del titulo con keyframe*/
+    animation-name: cambioColor; /*para que cambie de color el fondo del titulo con keyframes*/
     animation-duration: 5s;
     animation-iteration-count: infinite; /*para que se repita infinitas veces y no solo cuando cargo la pag
     si no quiero que sea infinitas veces, puedo poner una cantidad de veces, ejemplo:3 */
@@ -213,5 +230,20 @@ footer a{
     }
     100%{
         background-color: #1515ec;
+    }
+}
+@keyframes cambioAncho{
+    0%{
+        width: 550px;
+        background-color: #9191eb;
+    }
+    
+    50%{
+        width: 350px;
+        background-color: #33338d;
+    }
+    100%{
+        width: 250px;
+        background-color: #3a3a6b;
     }
 }
